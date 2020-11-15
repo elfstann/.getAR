@@ -23,10 +23,6 @@
                     id="animated-asset"
                     src="assets/asset.gltf"
                 ></a-asset-item>
-                <a-asset-item
-                    id="animated-second-asset"
-                    src="assets/asset-second.gltf"
-                ></a-asset-item>
             </a-assets>
 
             <a-marker
@@ -41,20 +37,11 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="0.2 0.2 0.2"
+                    scale="0.15 0.15 0.15"
+                    rotation = "0 90 0"
                     position = "0 0 0"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
-                    class="clickable"
-                    gesture-handler
-                ></a-entity>
-                
-                <a-entity
-                    id="bowser-second-model"
-                    scale="0.01 0.01 0.01"
-                    position = "0 0 0"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-second-asset"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
